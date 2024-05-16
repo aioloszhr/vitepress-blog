@@ -197,3 +197,41 @@ queue; // []
 要想访问链表中的任何一个元素，都得从起点结点开始，逐个访问 next，一直访问到目标结点为止。为了确保起点结点是可抵达的，我们有时还会设定一个 head 指针来专门指向链表的开始位置：
 
 ![An image](/link/finish.png)
+
+### 链表结点的创建
+
+创建链表结点，需要一个构造函数：
+
+```ts
+function ListNode(val) {
+	this.val = val;
+	this.next = null;
+}
+```
+
+在使用构造函数创建结点时，传入 val （数据域对应的值内容）、指定 next （下一个链表结点）即可：
+
+```ts
+const node = new ListNode(1);
+node.next = new ListNode(2);
+```
+
+以上，就创建出了一个数据域值为 1，next 结点数据域值为 2 的链表结点：
+
+![An image](/link/link-1.png)
+
+### 链表元素的添加
+
+链表的结点间关系是通过 next 指针来维系的。因此，链表元素的添加和删除操作，本质上都是在围绕 next 指针做文章。
+
+在尾部添加结点：
+
+```ts
+const node1 = new ListNode(1);
+const node2 = new ListNode(2);
+const node3 = new ListNode(3);
+node1.next = node2;
+node2.next = node3; // node3 添加到 node2 所在链表的尾部，直接把 node2 的 next 指针指向 node3
+```
+
+![An image](/link/link-2.png)
