@@ -16,15 +16,15 @@ export default defineConfig({
 		nav: [
 			{ text: 'Home', link: '/' },
 			{ text: 'JavaScript', link: '/src/javaScript/' },
-			{ text: 'React', link: '/src/react/hooks/' },
+			{ text: 'React', link: '/src/react/sourceCode/fiber/' },
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' }
 		],
 		sidebar: {
 			'/src/react/': [
 				{
-					text: 'React',
-					items: [{ text: 'hooks', link: '/src/react/hooks/' }]
+					text: '源码',
+					items: [{ text: 'fiber', link: '/src/react/sourceCode/fiber/' }]
 				}
 			],
 			'/src/command/': [
@@ -45,6 +45,7 @@ export default defineConfig({
 			'/src/algorithm/': [
 				{
 					text: '数据结构',
+					collapsed: true,
 					items: [
 						{ text: '数组', link: '/src/algorithm/array/' },
 						{ text: '栈、队列、链表', link: '/src/algorithm/linear-structure/' },
