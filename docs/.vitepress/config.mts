@@ -17,7 +17,7 @@ export default defineConfig({
 			{ text: 'Home', link: '/' },
 			{ text: 'JavaScript', link: '/src/javaScript/' },
 			{ text: 'React', link: '/src/react/hooks/' },
-			{ text: '命令', link: '/src/command/git/' },
+			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' }
 		],
 		sidebar: {
@@ -29,8 +29,11 @@ export default defineConfig({
 			],
 			'/src/command/': [
 				{
-					text: '命令',
-					items: [{ text: 'Git', link: '/src/command/git/' }]
+					text: 'Git',
+					items: [
+						{ text: '常用命令', link: '/src/command/git/common/' },
+						{ text: '问题', link: '/src/command/git/problem/' }
+					]
 				}
 			],
 			'/src/javaScript/': [
@@ -44,7 +47,8 @@ export default defineConfig({
 					text: '数据结构',
 					items: [
 						{ text: '数组', link: '/src/algorithm/array/' },
-						{ text: '栈、队列、链表', link: '/src/algorithm/linear-structure/' }
+						{ text: '栈、队列、链表', link: '/src/algorithm/linear-structure/' },
+						{ text: '树、二叉树', link: '/src/algorithm/tree/' }
 					]
 				}
 			]
