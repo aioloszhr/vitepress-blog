@@ -15,9 +15,10 @@ export default defineConfig({
 		/** 添加导航 */
 		nav: [
 			{ text: 'Home', link: '/' },
+			{ text: 'JavaScript', link: '/src/javaScript/' },
 			{ text: 'React', link: '/src/react/hooks/' },
 			{ text: '命令', link: '/src/command/git/' },
-			{ text: '算法', link: '/src/algorithm/' }
+			{ text: '算法', link: '/src/algorithm/array/' }
 		],
 		sidebar: {
 			'/src/react/': [
@@ -30,6 +31,21 @@ export default defineConfig({
 				{
 					text: '命令',
 					items: [{ text: 'Git', link: '/src/command/git/' }]
+				}
+			],
+			'/src/javaScript/': [
+				{
+					text: '数组',
+					items: [{ text: 'api', link: '/src/javaScript/' }]
+				}
+			],
+			'/src/algorithm/': [
+				{
+					text: '数据结构',
+					items: [
+						{ text: '数组', link: '/src/algorithm/array/' },
+						{ text: '栈、队列、链表', link: '/src/algorithm/linear-structure/' }
+					]
 				}
 			]
 		}
