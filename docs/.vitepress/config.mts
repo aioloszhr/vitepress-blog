@@ -15,25 +15,43 @@ export default defineConfig({
 		/** 添加导航 */
 		nav: [
 			{ text: 'Home', link: '/' },
+			{ text: 'Html & Css', link: '/src/html-css/html/' },
 			{ text: 'JavaScript', link: '/src/javaScript/' },
 			{ text: 'React', link: '/src/react/sourceCode/fiber/' },
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' }
 		],
 		sidebar: {
+			'/src/html-css/': [
+				{
+					text: 'Html & Css',
+					collapsed: true,
+					items: [
+						{ text: 'Html', link: '/src/html-css/html/' },
+						{ text: 'Css', link: '/src/html-css/css/' }
+					]
+				}
+			],
 			'/src/react/': [
 				{
 					text: '源码',
+					collapsed: true,
 					items: [{ text: 'fiber', link: '/src/react/sourceCode/fiber/' }]
 				}
 			],
 			'/src/command/': [
 				{
 					text: 'Git',
+					collapsed: true,
 					items: [
 						{ text: '常用命令', link: '/src/command/git/common/' },
 						{ text: '问题', link: '/src/command/git/problem/' }
 					]
+				},
+				{
+					text: 'Npm',
+					collapsed: true,
+					items: [{ text: '常用选项', link: '/src/command/npm/options/' }]
 				}
 			],
 			'/src/javaScript/': [
