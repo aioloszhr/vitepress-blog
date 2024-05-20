@@ -19,7 +19,8 @@ export default defineConfig({
 			{ text: 'JavaScript', link: '/src/javaScript/' },
 			{ text: 'React', link: '/src/react/sourceCode/fiber/' },
 			{ text: '命令', link: '/src/command/git/common/' },
-			{ text: '算法', link: '/src/algorithm/array/' }
+			{ text: '算法', link: '/src/algorithm/array/' },
+			{ text: '构建工具', link: '/src/build-tools/webpack/' }
 		],
 		sidebar: {
 			'/src/html-css/': [
@@ -51,7 +52,10 @@ export default defineConfig({
 				{
 					text: 'Npm',
 					collapsed: true,
-					items: [{ text: '常用选项', link: '/src/command/npm/options/' }]
+					items: [
+						{ text: '常用选项', link: '/src/command/npm/options/' },
+						{ text: '常用命令', link: '/src/command/npm/common/' }
+					]
 				}
 			],
 			'/src/javaScript/': [
@@ -69,6 +73,13 @@ export default defineConfig({
 						{ text: '栈、队列、链表', link: '/src/algorithm/linear-structure/' },
 						{ text: '树、二叉树', link: '/src/algorithm/tree/' }
 					]
+				}
+			],
+			'/src/build-tools/': [
+				{
+					text: '构建工具',
+					collapsed: true,
+					items: [{ text: 'webpack', link: '/src/build-tools/webpack/' }]
 				}
 			]
 		}
