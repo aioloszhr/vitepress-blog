@@ -15,6 +15,7 @@ export default defineConfig({
 		/** 添加导航 */
 		nav: [
 			{ text: 'Home', link: '/' },
+			{ text: '文章', link: '/src/article/mock/' },
 			{ text: 'Html & Css', link: '/src/html-css/html/' },
 			{ text: 'JavaScript', link: '/src/javaScript/' },
 			{ text: 'React', link: '/src/react/sourceCode/fiber/' },
@@ -23,6 +24,12 @@ export default defineConfig({
 			{ text: '构建工具', link: '/src/build-tools/webpack/' }
 		],
 		sidebar: {
+			'/src/article/': [
+				{
+					text: 'Mock',
+					link: '/src/article/mock/'
+				}
+			],
 			'/src/html-css/': [
 				{
 					text: 'Html & Css',
@@ -77,9 +84,14 @@ export default defineConfig({
 			],
 			'/src/build-tools/': [
 				{
-					text: '构建工具',
+					text: 'Webpack',
 					collapsed: true,
-					items: [{ text: 'webpack', link: '/src/build-tools/webpack/' }]
+					items: [{ text: '性能优化', link: '/src/build-tools/webpack/' }]
+				},
+				{
+					text: 'Vite',
+					collapsed: true,
+					items: [{ text: 'vite', link: '/src/build-tools/vite/' }]
 				}
 			]
 		}

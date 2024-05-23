@@ -26,3 +26,22 @@ git branch -m <name>
 ```bash
 git clone --depth=1 --single-branch git@github.com:ant-design/ant-design.git
 ```
+
+## 本地初始化 git 项目并和远程分支关联
+
+```bash
+# 初始化 Git 仓库
+git init
+
+# 添加所有文件到仓库
+git add .
+
+# 提交更改
+git commit -m "Initial commit"
+
+# 关联到远程仓库
+git remote add origin <remote>
+
+# 推送到远程仓库
+git push -u origin main
+```

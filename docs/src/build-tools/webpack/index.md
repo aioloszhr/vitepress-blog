@@ -2,11 +2,11 @@
 outline: deep
 ---
 
-# webpack
+# 性能优化
 
-## webpack 性能优化
+webpack 性能优化案例
 
-### 更新版本
+## 更新版本
 
 使用最新的 webpack 版本，通过 webpack 自身的迭代优化，来加快构建速度。**webpack5 较于 webpack4，新增了持久化缓存、改进缓存算法等优化**
 
