@@ -75,11 +75,14 @@ export default defineConfig({
 					items: [{ text: 'hooks', link: '/src/framework/react/hooks/' }]
 				}
 			],
-			'/src/framework/nest/section-56/': [
+			'/src/framework/nest/': [
 				{
 					text: 'Nest',
 					collapsed: true,
-					items: [{ text: 'JWT、Session', link: '/src/framework/nest/section-56/' }]
+					items: [
+						{ text: 'JWT、Session', link: '/src/framework/nest/section-56/' },
+						{ text: 'MySql、TypeORM、JWT实现登录注册', link: '/src/framework/nest/section-57/' }
+					]
 				}
 			],
 			'/src/command/': [
