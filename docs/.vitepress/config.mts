@@ -30,7 +30,7 @@ export default defineConfig({
 					},
 					{
 						text: 'Nest',
-						link: '/src/framework/nest/section-56/'
+						link: '/src/framework/nest/section-55/'
 					}
 				]
 			},
@@ -80,8 +80,10 @@ export default defineConfig({
 					text: 'Nest',
 					collapsed: true,
 					items: [
+						{ text: 'Configuration配置', link: '/src/framework/nest/section-55/' },
 						{ text: 'JWT、Session', link: '/src/framework/nest/section-56/' },
-						{ text: 'MySql、TypeORM、JWT实现登录注册', link: '/src/framework/nest/section-57/' }
+						{ text: 'MySql、TypeORM、JWT实现登录注册', link: '/src/framework/nest/section-57/' },
+						{ text: 'Interceptor拦截器', link: '/src/framework/nest/section-58/' }
 					]
 				}
 			],
