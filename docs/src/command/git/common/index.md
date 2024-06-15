@@ -51,3 +51,5 @@ git push -u origin main
 ```bash
 git log
 ```
+
+按下字母 `q` 退出查看历史状态。
