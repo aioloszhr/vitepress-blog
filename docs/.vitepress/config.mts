@@ -15,7 +15,6 @@ export default defineConfig({
 		/** 添加导航 */
 		nav: [
 			{ text: 'Home', link: '/' },
-			{ text: '文章', link: '/src/article/mock/' },
 			{ text: 'Html & Css', link: '/src/html-css/html/' },
 			{ text: 'JavaScript', link: '/src/javaScript/' },
 			{
@@ -28,10 +27,8 @@ export default defineConfig({
 							{ text: 'hooks', link: '/src/framework/react/hooks/' }
 						]
 					},
-					{
-						text: 'Nest',
-						link: '/src/framework/nest/section-55/'
-					}
+					{ text: 'Nest', link: '/src/framework/nest/section-55/' },
+					{ text: 'Zustand', link: '/src/framework/zustand/' }
 				]
 			},
 			{ text: '命令', link: '/src/command/git/common/' },
@@ -39,12 +36,6 @@ export default defineConfig({
 			{ text: '构建工具', link: '/src/build-tools/webpack/' }
 		],
 		sidebar: {
-			'/src/article/': [
-				{
-					text: 'Mock',
-					link: '/src/article/mock/'
-				}
-			],
 			'/src/html-css/': [
 				{ text: 'Html', link: '/src/html-css/html/' },
 				{
@@ -87,6 +78,7 @@ export default defineConfig({
 					]
 				}
 			],
+			'/src/framework/zustand/': [{ text: 'zustand', link: '/src/framework/zustand/' }],
 			'/src/command/': [
 				{
 					text: 'Git',
@@ -131,7 +123,7 @@ export default defineConfig({
 				{
 					text: 'Vite',
 					collapsed: true,
-					items: [{ text: 'vite', link: '/src/build-tools/vite/' }]
+					items: [{ text: '在Vite中配置Mock数据', link: '/src/build-tools/vite/mock/' }]
 				}
 			]
 		}
