@@ -27,7 +27,7 @@ export default defineConfig({
 							{ text: 'hooks', link: '/src/framework/react/hooks/' }
 						]
 					},
-					{ text: 'Nest', link: '/src/framework/nest/section-55/' },
+					{ text: 'Nest', link: '/src/framework/nest/section-3/' },
 					{ text: 'Zustand', link: '/src/framework/zustand/' }
 				]
 			},
@@ -71,8 +71,13 @@ export default defineConfig({
 					text: 'Nest',
 					collapsed: true,
 					items: [
+						{ text: 'Nest CLI', link: '/src/framework/nest/section-3/' },
+						{ text: 'IOC', link: '/src/framework/nest/section-5/' },
+						{ text: '使用多种Provider，灵活注入对象', link: '/src/framework/nest/section-7/' },
+						{ text: '全局模块和生命周期', link: '/src/framework/nest/section-8/' },
+						{ text: 'AOP', link: '/src/framework/nest/section-9/' },
 						{ text: 'Configuration配置', link: '/src/framework/nest/section-55/' },
-						{ text: 'JWT、Session', link: '/src/framework/nest/section-56/' },
+						{ text: '两种登录状态保存方式：JWT、Session', link: '/src/framework/nest/section-56/' },
 						{ text: 'MySql、TypeORM、JWT实现登录注册', link: '/src/framework/nest/section-57/' },
 						{ text: 'Interceptor拦截器', link: '/src/framework/nest/section-58/' }
 					]
