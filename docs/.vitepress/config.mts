@@ -33,7 +33,8 @@ export default defineConfig({
 			},
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' },
-			{ text: '构建工具', link: '/src/build-tools/webpack/' }
+			{ text: '构建工具', link: '/src/build-tools/webpack/' },
+			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] }
 		],
 		sidebar: {
 			'/src/html-css/': [
@@ -129,6 +130,18 @@ export default defineConfig({
 					text: 'Vite',
 					collapsed: true,
 					items: [{ text: '在Vite中配置Mock数据', link: '/src/build-tools/vite/mock/' }]
+				}
+			],
+			'/src/actual-combal/react-admin/': [
+				{
+					text: 'zr-admin后台管理系统开发记录',
+					collapsed: true,
+					items: [
+						{ text: '实现登录功能', link: '/src/actual-combal/react-admin/section-3/' },
+						{ text: '封装axios', link: '/src/actual-combal/react-admin/section-4/' },
+						{ text: '雪花算法', link: '/src/actual-combal/react-admin/section-6/' },
+						{ text: '通过RBAC模型实现前后端动态菜单和动态路由', link: '/src/actual-combal/react-admin/section-8/' }
+					]
 				}
 			]
 		}
