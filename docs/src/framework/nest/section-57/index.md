@@ -12,6 +12,9 @@ outline: deep
 
 2. 通过 `TypeOrmModule.forRoot`、`TypeOrmModule.forFeature` 的动态模块添加数据源，拿到 **User** 的 **Repository**。
 
+<span style="color:red;font-weight:600">注：</span> `TypeOrmModule.forFeature`：`NestJS` 中用于将 TypeORM 实体注入到模块的一个方
+法，使你能够在服务中使用这些实体进行数据库操作。
+
 3. 用 **Repository** 来做增删改查，实现注册和登录的功能。
 
 ## JWT

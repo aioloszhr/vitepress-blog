@@ -16,7 +16,7 @@ export default defineConfig({
 		nav: [
 			{ text: 'Home', link: '/' },
 			{ text: 'Html & Css', link: '/src/html-css/html/' },
-			{ text: 'JavaScript', link: '/src/javaScript/' },
+			{ text: 'JavaScript', link: '/src/javascript/regular-expression/' },
 			{
 				text: '框架',
 				items: [
@@ -34,7 +34,8 @@ export default defineConfig({
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' },
 			{ text: '构建工具', link: '/src/build-tools/webpack/' },
-			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] }
+			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] },
+			{ text: 'AI & LLM', items: [{ text: 'LangChain', link: '/src/llm/langChain/section-1/' }] }
 		],
 		sidebar: {
 			'/src/html-css/': [
@@ -53,6 +54,7 @@ export default defineConfig({
 					]
 				}
 			],
+			'/src/javascript/': [{ text: '正则表达式', link: '/src/javascript/regular-expression/' }],
 			'/src/framework/react/sourceCode/': [
 				{
 					text: '源码',
@@ -77,6 +79,7 @@ export default defineConfig({
 						{ text: '使用多种Provider，灵活注入对象', link: '/src/framework/nest/section-7/' },
 						{ text: '全局模块和生命周期', link: '/src/framework/nest/section-8/' },
 						{ text: 'AOP', link: '/src/framework/nest/section-9/' },
+						{ text: '快速掌握TypeORM', link: '/src/framework/nest/section-46/' },
 						{ text: 'Configuration配置', link: '/src/framework/nest/section-55/' },
 						{ text: '两种登录状态保存方式：JWT、Session', link: '/src/framework/nest/section-56/' },
 						{ text: 'MySql、TypeORM、JWT实现登录注册', link: '/src/framework/nest/section-57/' },
@@ -140,7 +143,22 @@ export default defineConfig({
 						{ text: '实现登录功能', link: '/src/actual-combal/react-admin/section-3/' },
 						{ text: '封装axios', link: '/src/actual-combal/react-admin/section-4/' },
 						{ text: '雪花算法', link: '/src/actual-combal/react-admin/section-6/' },
-						{ text: '通过RBAC模型实现前后端动态菜单和动态路由', link: '/src/actual-combal/react-admin/section-8/' }
+						{ text: '通过RBAC模型实现前后端动态菜单和动态路由', link: '/src/actual-combal/react-admin/section-8/' },
+						{
+							text: 'websocket实现用户权限变更推送消息推送，自动刷新',
+							link: '/src/actual-combal/react-admin/section-10/'
+						}
+					]
+				}
+			],
+			'/src/llm/langChain/': [
+				{
+					text: 'LangChain.js 入门和实战',
+					collapsed: true,
+					items: [
+						{ text: '学习 LLM 的工具', link: '/src/llm/langChain/section-1/' },
+						{ text: '如何获取 OpenAI 服务', link: '/src/llm/langChain/section-2/' },
+						{ text: 'langchan.js的介绍、安装和快速入门', link: '/src/llm/langChain/section-3/' }
 					]
 				}
 			]
