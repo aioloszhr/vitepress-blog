@@ -158,7 +158,15 @@ export default defineConfig({
 					items: [
 						{ text: '学习 LLM 的工具', link: '/src/llm/langChain/section-1/' },
 						{ text: '如何获取 OpenAI 服务', link: '/src/llm/langChain/section-2/' },
-						{ text: 'langchan.js的介绍、安装和快速入门', link: '/src/llm/langChain/section-3/' }
+						{ text: 'langchan.js的介绍、安装和快速入门', link: '/src/llm/langChain/section-3/' },
+						{ text: '检索增强生成（RAG）原理和流程', link: '/src/llm/langChain/section-4/' },
+						{ text: 'Prompt: 构建可复用的 Prompt Template', link: '/src/llm/langChain/section-5/' },
+						{ text: 'OutputParset: 构建格式化输出', link: '/src/llm/langChain/section-6/' },
+						{ text: 'Embeddinig: 多数据源加载', link: '/src/llm/langChain/section-7/' },
+						{ text: 'Embeddinig: 大规模数据的预处理', link: '/src/llm/langChain/section-8/' },
+						{ text: 'Retriever: 构建向量数据库', link: '/src/llm/langChain/section-9/' },
+						{ text: 'Retriever: retriever 常见优化方式', link: '/src/llm/langChain/section-10/' },
+						{ text: 'RAG: 基于私域数据进行问答', link: '/src/llm/langChain/section-11/' }
 					]
 				}
 			]
