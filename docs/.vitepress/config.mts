@@ -8,13 +8,14 @@ export default defineConfig({
 	themeConfig: {
 		/** 导航栏上显示的 Logo，位于站点标题前 */
 		logo: '/ray.svg',
+		siteTitle: '个人博客',
 		/** 启用本地搜索 */
 		search: {
 			provider: 'local'
 		},
 		/** 添加导航 */
 		nav: [
-			{ text: 'Home', link: '/' },
+			{ text: '首页', link: '/' },
 			{ text: 'Html & Css', link: '/src/html-css/html/' },
 			{ text: 'JavaScript', link: '/src/javascript/regular-expression/' },
 			{

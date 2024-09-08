@@ -3,23 +3,19 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: '个人博客'
+  text: '学习笔记'
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 前端框架
+      link: /src/framework/react/sourceCode/fiber/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 实战
+      link: /src/actual-combal/react-admin/section-3/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 前端框架
+    details: 记录常用的前端框架技术，例如react、vue、nest等等
+  - title: 实战
+    details: 记录个人项目
 ---
-
