@@ -29,12 +29,24 @@ export default defineConfig({
 						]
 					},
 					{ text: 'Nest', link: '/src/framework/nest/section-3/' },
-					{ text: 'Zustand', link: '/src/framework/zustand/' }
+					{ text: 'Zustand', link: '/src/framework/zustand/' },
+					{
+						text: 'Vue3',
+						items: [
+							{ text: '全局API', link: '/src/framework/vue3/globalApi/' },
+							{ text: '组合式API', link: '/src/framework/vue3/compositionApi/' }
+						]
+					},
+					{
+						text: 'Vue-rouer',
+						link: '/src/framework/vue-router/navigation-guard/'
+					}
 				]
 			},
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' },
 			{ text: '构建工具', link: '/src/build-tools/webpack/' },
+			{ text: '工程化', link: '/src/project/eslint/' },
 			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] },
 			{ text: 'AI & LLM', items: [{ text: 'LangChain', link: '/src/llm/langChain/section-1/' }] }
 		],
@@ -51,6 +63,10 @@ export default defineConfig({
 								{ text: '响应式布局', link: '/src/html-css/css/responsive/layout/' },
 								{ text: '解决方案', link: '/src/html-css/css/responsive/solution/' }
 							]
+						},
+						{
+							text: '样式属性',
+							link: '/src/html-css/css/attribute/'
 						}
 					]
 				}
@@ -89,6 +105,16 @@ export default defineConfig({
 				}
 			],
 			'/src/framework/zustand/': [{ text: 'zustand', link: '/src/framework/zustand/' }],
+			'/src/framework/vue-router/': [
+				{
+					text: 'Vue-Router',
+					collapsed: true,
+					items: [
+						{ text: '导航守卫', link: '/src/framework/vue-router/navigation-guard/' },
+						{ text: '导航守卫', link: '/src/framework/vue-router/navigation-guard/' }
+					]
+				}
+			],
 			'/src/command/': [
 				{
 					text: 'Git',
@@ -132,8 +158,7 @@ export default defineConfig({
 				},
 				{
 					text: 'Vite',
-					collapsed: true,
-					items: [{ text: '在Vite中配置Mock数据', link: '/src/build-tools/vite/mock/' }]
+					link: '/src/build-tools/vite/'
 				}
 			],
 			'/src/actual-combal/react-admin/': [
@@ -169,6 +194,12 @@ export default defineConfig({
 						{ text: 'Retriever: retriever 常见优化方式', link: '/src/llm/langChain/section-10/' },
 						{ text: 'RAG: 基于私域数据进行问答', link: '/src/llm/langChain/section-11/' }
 					]
+				}
+			],
+			'/src/project/': [
+				{
+					text: 'Eslint',
+					link: '/src/project/eslint/'
 				}
 			]
 		}

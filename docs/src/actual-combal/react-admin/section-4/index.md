@@ -4,6 +4,57 @@ outline: deep
 
 # 封装 `axios`
 
+## 实现刷新 token 接口
+
+前端把`refreshToken`传给后端，后端拿到`refreshToken`去`redis`中检查当前`refreshToken`是否失效，<span style="color:red">如果失效就报错</span>，没失效就颁发一个新的`token`给前端。这里注意一下，不要生成新的`refreshToken`返回给前端，不然如果别人拿到一次`refreshToken`后，可以一直刷新拿新`token`了。
+
+```ts
+// src/modules/auth/controller/auth.controller.ts
+...
+	@ApiOperation({ description: '刷新token' })
+	@Post('refresh/token')
+	async refreshToken(refreshTokenDTO: RefreshTokenDTO) {
+		if (!refreshTokenDTO.refreshToken) {
+			throw new HttpException('用户凭证已过期，请重新登录！', HttpStatus.UNAUTHORIZED);
+		}
+	}
+```
+
+```ts
+// src/modules/auth/service/auth.service.ts
+ ...
+ async refreshToken(refreshTokenDto: RefreshTokenDTO) {
+		const userId = await this.redisClient.get(`refreshToken:${refreshTokenDto.refreshToken}`);
+
+		if (!userId) {
+			throw new HttpException('用户凭证已过期，请重新登录！', HttpStatus.UNAUTHORIZED);
+		}
+
+		const { expire } = this.apiConfigService.redisConfig;
+
+		const token = uuid();
+
+		await this.redisClient
+			.multi()
+			.set(`token:${token}`, JSON.stringify({ userId, refreshTokenDto }))
+			.expire(`token:${token}`, expire)
+			.exec();
+
+		// TTL（Time to Live）是指键的剩余存活时间
+		const refreshExpire = await this.redisClient.ttl(
+			`refreshToken:${refreshTokenDto.refreshToken}`
+		);
+
+		return {
+			expire,
+			token,
+			refreshExpire,
+			refreshToken: refreshTokenDto.refreshToken
+		};
+	}
+...
+```
+
 ## 统一返回值
 
 1. 在 `axios` 的响应拦截器中捕获异常，接口报错统一在响应拦截器中弹出，不用在每一处单独处理。
