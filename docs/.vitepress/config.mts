@@ -45,10 +45,11 @@ export default defineConfig({
 			},
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' },
-			{ text: '构建工具', link: '/src/build-tools/webpack/' },
+			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
 			{ text: '工程化', link: '/src/project/eslint/' },
 			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] },
-			{ text: 'AI & LLM', items: [{ text: 'LangChain', link: '/src/llm/langChain/section-1/' }] }
+			{ text: 'AI & LLM', items: [{ text: 'LangChain', link: '/src/llm/langChain/section-1/' }] },
+			{ text: '性能优化', link: '/src/performance/' }
 		],
 		sidebar: {
 			'/src/html-css/': [
@@ -110,7 +111,7 @@ export default defineConfig({
 					text: 'Vue-Router',
 					collapsed: true,
 					items: [
-						{ text: '导航守卫', link: '/src/framework/vue-router/navigation-guard/' },
+						{ text: '动态路由匹配', link: '/src/framework/vue-router/dynamic-router-matching/' },
 						{ text: '导航守卫', link: '/src/framework/vue-router/navigation-guard/' }
 					]
 				}
@@ -154,7 +155,10 @@ export default defineConfig({
 				{
 					text: 'Webpack',
 					collapsed: true,
-					items: [{ text: '性能优化', link: '/src/build-tools/webpack/' }]
+					items: [
+						{ text: '基础', link: '/src/build-tools/webpack/base/' },
+						{ text: '性能优化', link: '/src/build-tools/webpack/performance/' }
+					]
 				},
 				{
 					text: 'Vite',
