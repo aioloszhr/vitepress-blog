@@ -48,8 +48,7 @@ export default defineConfig({
 			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
 			{ text: '工程化', link: '/src/project/eslint/' },
 			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] },
-			{ text: 'AI & LLM', items: [{ text: 'LangChain', link: '/src/llm/langChain/section-1/' }] },
-			{ text: '性能优化', link: '/src/performance/' }
+			{ text: '性能优化', link: '/src/performance/' },
 		],
 		sidebar: {
 			'/src/html-css/': [
@@ -178,25 +177,6 @@ export default defineConfig({
 							text: 'websocket实现用户权限变更推送消息推送，自动刷新',
 							link: '/src/actual-combal/react-admin/section-10/'
 						}
-					]
-				}
-			],
-			'/src/llm/langChain/': [
-				{
-					text: 'LangChain.js 入门和实战',
-					collapsed: true,
-					items: [
-						{ text: '学习 LLM 的工具', link: '/src/llm/langChain/section-1/' },
-						{ text: '如何获取 OpenAI 服务', link: '/src/llm/langChain/section-2/' },
-						{ text: 'langchan.js的介绍、安装和快速入门', link: '/src/llm/langChain/section-3/' },
-						{ text: '检索增强生成（RAG）原理和流程', link: '/src/llm/langChain/section-4/' },
-						{ text: 'Prompt: 构建可复用的 Prompt Template', link: '/src/llm/langChain/section-5/' },
-						{ text: 'OutputParset: 构建格式化输出', link: '/src/llm/langChain/section-6/' },
-						{ text: 'Embeddinig: 多数据源加载', link: '/src/llm/langChain/section-7/' },
-						{ text: 'Embeddinig: 大规模数据的预处理', link: '/src/llm/langChain/section-8/' },
-						{ text: 'Retriever: 构建向量数据库', link: '/src/llm/langChain/section-9/' },
-						{ text: 'Retriever: retriever 常见优化方式', link: '/src/llm/langChain/section-10/' },
-						{ text: 'RAG: 基于私域数据进行问答', link: '/src/llm/langChain/section-11/' }
 					]
 				}
 			],
