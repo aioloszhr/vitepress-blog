@@ -46,7 +46,7 @@ export default defineConfig({
 			{ text: '命令', link: '/src/command/git/common/' },
 			{ text: '算法', link: '/src/algorithm/array/' },
 			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
-			{ text: '工程化', link: '/src/project/eslint/' },
+			{ text: '工程化', link: '/src/project/configure/' },
 			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] },
 			{ text: '性能优化', link: '/src/performance/' },
 		],
@@ -131,6 +131,13 @@ export default defineConfig({
 						{ text: '常用选项', link: '/src/command/npm/options/' },
 						{ text: '常用命令', link: '/src/command/npm/common/' }
 					]
+				},
+				{
+					text: 'Linux',
+					collapsed: true,
+					items: [
+						{ text: '常用命令', link: '/src/command/linux/common/' }
+					]
 				}
 			],
 			'/src/javaScript/': [
@@ -182,8 +189,8 @@ export default defineConfig({
 			],
 			'/src/project/': [
 				{
-					text: 'Eslint',
-					link: '/src/project/eslint/'
+					text: '前端项目工程化配置',
+					link: '/src/project/configure/'
 				}
 			]
 		}
