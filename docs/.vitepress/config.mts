@@ -189,7 +189,7 @@ export default defineConfig({
 			],
 			'/src/project/': [
 				{
-					text: '前端项目工程化配置',
+					text: '项目搭建',
 					link: '/src/project/configure/'
 				}
 			]
