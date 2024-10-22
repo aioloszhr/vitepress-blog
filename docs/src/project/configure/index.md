@@ -337,6 +337,7 @@ module.exports = {
 		{name: 'typescript'},
 		{name: 'Vue'},
 		{name: 'node'},
+    {name: 'custom'}
 	],
 	// override the messages, defaults are as follows
 	messages: {

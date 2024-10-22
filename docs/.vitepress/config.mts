@@ -17,6 +17,7 @@ export default defineConfig({
 		nav: [
 			{ text: '首页', link: '/' },
 			{ text: 'Html & Css', link: '/src/html-css/html/' },
+			{ text: 'Svg', link: '/src/svg/attribute/' },
 			{ text: 'JavaScript', link: '/src/javascript/regular-expression/' },
 			{
 				text: '框架',
@@ -30,6 +31,12 @@ export default defineConfig({
 					},
 					{ text: 'Nest', link: '/src/framework/nest/section-3/' },
 					{ text: 'Zustand', link: '/src/framework/zustand/' },
+					{
+						text: 'Vue2',
+						items: [
+							{ text: 'API', link: '/src/framework/vue2/api/' },
+						]
+					},
 					{
 						text: 'Vue3',
 						items: [
@@ -52,24 +59,13 @@ export default defineConfig({
 		],
 		sidebar: {
 			'/src/html-css/': [
-				{ text: 'Html', link: '/src/html-css/html/' },
-				{
-					text: 'Css',
-					collapsed: true,
-					items: [
-						{
-							text: '布局',
-							items: [
-								{ text: '响应式布局', link: '/src/html-css/css/responsive/layout/' },
-								{ text: '解决方案', link: '/src/html-css/css/responsive/solution/' }
-							]
-						},
-						{
-							text: '样式属性',
-							link: '/src/html-css/css/attribute/'
-						}
-					]
-				}
+				{ text: 'Html', link: '/src/html-css/html/' }
+			],
+			'/src/svg/': [
+				{ text: '属性', link: '/src/svg/attribute/'},
+				{ text: '图形', link: '/src/svg/graphic/'},
+				{ text: '动画', link: '/src/svg/animation/'},
+				{ text: '路径', link: '/src/svg/path/'}
 			],
 			'/src/javascript/': [{ text: '正则表达式', link: '/src/javascript/regular-expression/' }],
 			'/src/framework/react/sourceCode/': [
@@ -168,7 +164,10 @@ export default defineConfig({
 				},
 				{
 					text: 'Vite',
-					link: '/src/build-tools/vite/'
+					collapsed: true,
+					items: [
+						{ text: 'CSS', link: '/src/build-tools/vite/css/' },
+					]
 				}
 			],
 			'/src/actual-combal/react-admin/': [
