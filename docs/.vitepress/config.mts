@@ -19,6 +19,7 @@ export default defineConfig({
 			{ text: 'Html & Css', link: '/src/html-css/html/' },
 			{ text: 'Svg', link: '/src/svg/attribute/' },
 			{ text: 'JavaScript', link: '/src/javascript/regular-expression/' },
+			{ text: 'TypeScript', link: '/src/typescript/tsconfig/' },
 			{
 				text: '框架',
 				items: [
@@ -41,7 +42,8 @@ export default defineConfig({
 						text: 'Vue3',
 						items: [
 							{ text: '全局API', link: '/src/framework/vue3/globalApi/' },
-							{ text: '组合式API', link: '/src/framework/vue3/compositionApi/' }
+							{ text: '组合式API', link: '/src/framework/vue3/compositionApi/' },
+							{ text: '内部API', link: '/src/framework/vue3/internalApi/' }
 						]
 					},
 					{
@@ -54,12 +56,21 @@ export default defineConfig({
 			{ text: '算法', link: '/src/algorithm/array/' },
 			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
 			{ text: '工程化', link: '/src/project/configure/' },
-			{ text: '实战', items: [{ text: 'React Admin', link: '/src/actual-combal/react-admin/section-3/' }] },
 			{ text: '性能优化', link: '/src/performance/' },
 		],
 		sidebar: {
 			'/src/html-css/': [
-				{ text: 'Html', link: '/src/html-css/html/' }
+				{ text: 'Html', link: '/src/html-css/html/' },
+				{
+					text: 'Css',
+					collapsed: true,
+					items: [
+						{ text: '属性', link: '/src/html-css/css/attribute/' },
+						{ text: '响应式布局', link: '/src/html-css/css/responsive-layout/' },
+						{ text: '问题解决方案', link: '/src/html-css/css/questions/' },
+					]
+				},
+				{ text: 'Scss', link: '/src/html-css/scss/' },
 			],
 			'/src/svg/': [
 				{ text: '属性', link: '/src/svg/attribute/'},
@@ -67,7 +78,14 @@ export default defineConfig({
 				{ text: '动画', link: '/src/svg/animation/'},
 				{ text: '路径', link: '/src/svg/path/'}
 			],
-			'/src/javascript/': [{ text: '正则表达式', link: '/src/javascript/regular-expression/' }],
+			'/src/javascript/': [
+				{ text: '正则表达式', link: '/src/javascript/regular-expression/' },
+				{ text: '数组', link: '/src/javascript/array/'},
+				{ text: '元素对象', link: '/src/javascript/element-object/'},
+			],
+			'/src/typescript/': [
+				{ text: 'tsconfig配置', link: '/src/typescript/tsconfig/' },
+			],
 			'/src/framework/react/sourceCode/': [
 				{
 					text: '源码',
@@ -121,6 +139,13 @@ export default defineConfig({
 					]
 				},
 				{
+					text: 'Linux',
+					collapsed: true,
+					items: [
+						{ text: '常用命令', link: '/src/command/linux/common/' }
+					]
+				},
+				{
 					text: 'Npm',
 					collapsed: true,
 					items: [
@@ -129,17 +154,11 @@ export default defineConfig({
 					]
 				},
 				{
-					text: 'Linux',
+					text: 'Pnpm',
 					collapsed: true,
 					items: [
-						{ text: '常用命令', link: '/src/command/linux/common/' }
+						{ text: '常用选项', link: '/src/command/pnpm/options/' }
 					]
-				}
-			],
-			'/src/javaScript/': [
-				{
-					text: '数组',
-					items: [{ text: 'api', link: '/src/javaScript/' }]
 				}
 			],
 			'/src/algorithm/': [
@@ -167,28 +186,13 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ text: 'CSS', link: '/src/build-tools/vite/css/' },
-					]
-				}
-			],
-			'/src/actual-combal/react-admin/': [
-				{
-					text: 'zr-admin后台管理系统开发记录',
-					collapsed: true,
-					items: [
-						{ text: '实现登录功能', link: '/src/actual-combal/react-admin/section-3/' },
-						{ text: '封装axios', link: '/src/actual-combal/react-admin/section-4/' },
-						{ text: '雪花算法', link: '/src/actual-combal/react-admin/section-6/' },
-						{ text: '通过RBAC模型实现前后端动态菜单和动态路由', link: '/src/actual-combal/react-admin/section-8/' },
-						{
-							text: 'websocket实现用户权限变更推送消息推送，自动刷新',
-							link: '/src/actual-combal/react-admin/section-10/'
-						}
+						{ text: '插件使用', link: '/src/build-tools/vite/others/' }
 					]
 				}
 			],
 			'/src/project/': [
 				{
-					text: '项目搭建',
+					text: 'pnpm + vite + vue3项目搭建',
 					link: '/src/project/configure/'
 				}
 			]

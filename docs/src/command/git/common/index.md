@@ -50,13 +50,13 @@
 - --depth=1 是下载单个 commit。
 - --single-branch 是下载单个分支。
 
-```bash
+```zsh
 git clone --depth=1 --single-branch git@github.com:ant-design/ant-design.git
 ```
 
 ## 本地初始化 `git` 项目并和远程分支关联
 
-```bash
+```zsh
 # 初始化 Git 仓库
 git init
 
@@ -72,3 +72,22 @@ git remote add origin <remote>
 # 推送到远程仓库
 git push -u origin main
 ```
+
+## `git commit`之后，如何撤销`commit`
+
+写完代码后，一般这样操作：
+
+```zsh
+# 添加所有文件
+git add .
+
+git commit -m "本功能全部完成"
+```
+
+如果执行完`commit`后，想撤回`commit`，执行如下命令：
+
+```zsh
+git reset --soft HEAD^
+```
+
+**注：** 仅仅是撤回commit操作，写的代码仍然保留。

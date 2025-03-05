@@ -11,7 +11,7 @@ outline: deep
 本次搭建采用vite提供模板，运行相关命令生成vite默认提供的项目模板。
 使用pnpm进行项目管理，如果未安装，请先执行命令`npm install pnpm -g`安装`pnpm`。
 
-注：node版本 20.17.1 npm版本 10.8.2
+注：node版本 20.17.0 npm版本 10.8.2
 
 ```zsh
 pnpm create vite zr-map --template vue-ts
@@ -154,6 +154,17 @@ export default {
   vueIndentScriptAndStyle: false,
   singleAttributePerLine: false
 };
+```
+### 添加`Prettier`忽略文件规则
+
+1. 在`src`同层级下新增文件`.prettierignore`。
+
+2. 添加忽略文件规则：
+
+```text
+dist
+node_modules
+pnpm-lock.yaml
 ```
 
 ## husky & lint-staged
