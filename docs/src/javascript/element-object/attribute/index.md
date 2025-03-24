@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# 元素对象
+# 实例属性
 
 ## offsetHeight
 

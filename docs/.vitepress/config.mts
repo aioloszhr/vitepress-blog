@@ -40,11 +40,7 @@ export default defineConfig({
 					},
 					{
 						text: 'Vue3',
-						items: [
-							{ text: '全局API', link: '/src/framework/vue3/globalApi/' },
-							{ text: '组合式API', link: '/src/framework/vue3/compositionApi/' },
-							{ text: '内部API', link: '/src/framework/vue3/internalApi/' }
-						]
+						link: '/src/framework/vue3/responsive-api/tool-function/'
 					},
 					{
 						text: 'Vue-rouer',
@@ -53,12 +49,21 @@ export default defineConfig({
 				]
 			},
 			{ text: '命令', link: '/src/command/git/common/' },
-			{ text: '算法', link: '/src/algorithm/array/' },
 			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
 			{ text: '工程化', link: '/src/project/configure/' },
 			{ text: '性能优化', link: '/src/performance/' },
+			{ text: '大模型', link: '/src/large-model/'}
 		],
 		sidebar: {
+			'/src/framework/vue3/responsive-api/tool-function/': [
+				{
+					text: '组合式API',
+					collapsed: true,
+					items: [
+						{ text: '相应式：工具', link: '/src/framework/vue3/responsive-api/tool-function/' },
+					]
+				},
+			],
 			'/src/html-css/': [
 				{ text: 'Html', link: '/src/html-css/html/' },
 				{
@@ -81,7 +86,14 @@ export default defineConfig({
 			'/src/javascript/': [
 				{ text: '正则表达式', link: '/src/javascript/regular-expression/' },
 				{ text: '数组', link: '/src/javascript/array/'},
-				{ text: '元素对象', link: '/src/javascript/element-object/'},
+				{ 
+					text: '元素对象', 
+					collapsed: true, 
+					items: [
+						{ text: '实例属性', link: '/src/javascript/element-object/attribute/' },
+						{ text: '实例方法', link: '/src/javascript/element-object/function/' },
+					]
+				},
 			],
 			'/src/typescript/': [
 				{ text: 'tsconfig配置', link: '/src/typescript/tsconfig/' },
@@ -161,17 +173,6 @@ export default defineConfig({
 					]
 				}
 			],
-			'/src/algorithm/': [
-				{
-					text: '数据结构',
-					collapsed: true,
-					items: [
-						{ text: '数组', link: '/src/algorithm/array/' },
-						{ text: '栈、队列、链表', link: '/src/algorithm/linear-structure/' },
-						{ text: '树、二叉树', link: '/src/algorithm/tree/' }
-					]
-				}
-			],
 			'/src/build-tools/': [
 				{
 					text: 'Webpack',
@@ -194,6 +195,17 @@ export default defineConfig({
 				{
 					text: 'pnpm + vite + vue3项目搭建',
 					link: '/src/project/configure/'
+				}
+			],
+			'/src/large-model/': [
+				{
+					text: '大模型简介',
+					collapsed: true,
+					items: [
+						{ text: '大模型发展过程', link: '/src/large-model/development-process/' },
+						{ text: '大模型分类', link: '/src/large-model/classification/' },
+						{ text: '当前代表性的大模型', link: '/src/large-model/current-representative/' }
+					]
 				}
 			]
 		}
