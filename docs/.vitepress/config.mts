@@ -52,7 +52,7 @@ export default defineConfig({
 			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
 			{ text: '工程化', link: '/src/project/configure/' },
 			{ text: '性能优化', link: '/src/performance/' },
-			{ text: '大模型', link: '/src/large-model/'}
+			{ text: '大模型', link: '/src/large-model/development-process/'}
 		],
 		sidebar: {
 			'/src/framework/vue3/responsive-api/tool-function/': [

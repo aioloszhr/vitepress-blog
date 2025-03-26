@@ -91,3 +91,21 @@ git reset --soft HEAD^
 ```
 
 **注：** 仅仅是撤回commit操作，写的代码仍然保留。
+
+## 修改远程仓库地址
+
+1. 输入命令修改远程仓库地址：
+
+```zsh
+git remote set-url origin <新地址>
+```
+- 例如：
+```zsh
+git remote set-url origin https://github.com/user/new-repo.git
+```
+
+2. 验证是否修改成功
+
+```zsh
+git remote -v
+```
