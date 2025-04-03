@@ -52,7 +52,8 @@ export default defineConfig({
 			{ text: '构建工具', link: '/src/build-tools/webpack/base/' },
 			{ text: '工程化', link: '/src/project/configure/' },
 			{ text: '性能优化', link: '/src/performance/' },
-			{ text: '大模型', link: '/src/large-model/development-process/'}
+			{ text: '大模型', link: '/src/large-model/development-process/'},
+			{ text: '可视化', link: '/src/visualization/threejs/base/'},
 		],
 		sidebar: {
 			'/src/framework/vue3/responsive-api/tool-function/': [
@@ -198,15 +199,20 @@ export default defineConfig({
 				}
 			],
 			'/src/large-model/': [
+				{ text: '大模型简介', link: '/src/large-model/Introduction/' },
+				{ text: '提示词、提示词工程', link: '/src/large-model/prompt/' },
+				{ text: 'Agent概念、组成与决策', link: '/src/large-model/agents/' },
+				{ text: '什么是RAG？', link: '/src/large-model/rag/' },
+			],
+			'/src/visualization/': [
 				{
-					text: '大模型简介',
+					text: 'Threejs',
 					collapsed: true,
 					items: [
-						{ text: '大模型发展过程', link: '/src/large-model/development-process/' },
-						{ text: '大模型分类', link: '/src/large-model/classification/' },
-						{ text: '当前代表性的大模型', link: '/src/large-model/current-representative/' }
+						{ text: '基本概念', link: '/src/visualization/threejs/base/' },
+						{ text: '可视化调试', link: '/src/visualization/threejs/visual-debugging/' },
 					]
-				}
+				},
 			]
 		}
 	}
