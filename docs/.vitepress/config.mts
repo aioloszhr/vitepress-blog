@@ -211,6 +211,8 @@ export default defineConfig({
 					items: [
 						{ text: '基本概念', link: '/src/visualization/threejs/base/' },
 						{ text: '可视化调试', link: '/src/visualization/threejs/visual-debugging/' },
+						{ text: '山脉地形图（案例）', link: '/src/visualization/threejs/mountain-map/' },
+						{ text: 'uv坐标和uv动画', link: '/src/visualization/threejs/uv/' },
 					]
 				},
 			]
